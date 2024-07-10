@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from connectors.airbyte import AirbyteClient
+from integration.connectors.airbyte import AirbyteClient
 
 if __name__ == "__main__":
     load_dotenv()
@@ -9,6 +9,7 @@ if __name__ == "__main__":
     AIRBYTE_SERVER_NAME = os.environ.get("AIRBYTE_SERVER_NAME")
     AIRBYTE_CONNECTION_ID = os.environ.get("AIRBYTE_CONNECTION_ID")
     
+
     airbyte_client = AirbyteClient(
         server_name=AIRBYTE_SERVER_NAME,
         username=AIRBYTE_USERNAME,

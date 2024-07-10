@@ -5,18 +5,17 @@ sources:
     database: northwind_dw
     schema: RAW
     tables:
-      - name: actor
-      - name: address
-      - name: category
-      - name: city
-      - name: country
-      - name: customer
-      - name: film
-      - name: film_actor
-      - name: film_category
-      - name: inventory
-      - name: language
-      - name: payment
-      - name: rental
-      - name: staff
-      - name: store
+      - name: categories
+      - name: customers
+      - name: customer_customer_demo
+      - name: customer_demographics
+      - name: employees
+      - name: employee_territories
+      - name: orders
+      - name: orders_details
+      - name: products
+      - name: region
+      - name: shippers
+      - name: territories
+      - name: us_states
+  

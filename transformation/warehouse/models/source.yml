@@ -12,10 +12,11 @@ sources:
       - name: employees
       - name: employee_territories
       - name: orders
-      - name: orders_details
+      - name: order_details
       - name: products
       - name: region
       - name: shippers
+      - name: suppliers
       - name: territories
       - name: us_states
   

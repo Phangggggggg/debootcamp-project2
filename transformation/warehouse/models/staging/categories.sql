@@ -1,6 +1,7 @@
 {{
     config(
-        materialized="table"
+        materialized="table",
+        unique_key=["category_id"]
     )
 }}
 
@@ -10,3 +11,4 @@ select
     description,
     picture
 from {{ source('northwind', 'categories') }}
+

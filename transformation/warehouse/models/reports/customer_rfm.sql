@@ -9,3 +9,4 @@ from
 left join 
 {{ref('order_details')}} t2 on t1.order_id = t2.order_id 
 group by 1
+order by 1

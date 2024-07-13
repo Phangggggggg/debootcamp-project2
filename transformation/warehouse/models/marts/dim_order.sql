@@ -8,4 +8,4 @@
 select
 *
 from 
-{{ref('order_details')}}
+{{ref('orders_details')}}

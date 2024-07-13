@@ -10,5 +10,5 @@ order_date
 from 
 {{ref('orders')}} t1
 left join 
-{{ref('order_details')}} t2 on t1.order_id = t2.order_id 
+{{ref('orders_details')}} t2 on t1.order_id = t2.order_id 
 group by 1

@@ -1,3 +1,10 @@
+
+{{
+    config(
+        materialized="table"
+    )
+}}
+
 select
 row_number() over () as ship_id 
 ,shipped_date
@@ -21,7 +28,7 @@ from
 	, ship_postal_code
 	, ship_country
 	from 
-	orders t1
+	{{ref('orders')}} 
 	group by 1,2,3,4,5,6,7,8,9
 	)
 	

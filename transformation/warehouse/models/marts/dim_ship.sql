@@ -16,7 +16,7 @@ from
 	, ship_region
 	, ship_postal_code
 	, ship_country
-    , dense_rank() over (order by concat(ship_name, ship_address, freight)) as ship_id
+    , dense_rank() over (order by concat(ship_name, ship_address)) as ship_id
 	from 
 	{{ref('orders')}} 
     )

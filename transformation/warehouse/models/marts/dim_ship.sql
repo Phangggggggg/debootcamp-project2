@@ -6,7 +6,7 @@
 }}
 
 select
-row_number() over () as ship_id 
+row_number() over(order by ship_address)as ship_id 
 ,shipped_date
 , ship_via
 , freight

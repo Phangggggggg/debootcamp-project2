@@ -1,3 +1,10 @@
+{{
+    config(
+        materialized="table"
+    )
+}}
+
+
 select
 	t1.employee_id 
 	, t1.last_name

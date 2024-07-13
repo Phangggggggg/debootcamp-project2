@@ -11,6 +11,7 @@
 	, t1.employee_id
 	, t2.product_id
 	, t1.order_date
+	, dense_rank() over (order by concat(ship_name, ship_address as ship_id
 	from 
 	{{ref('orders')}} t1
 	left join 

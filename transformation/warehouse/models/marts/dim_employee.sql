@@ -5,10 +5,9 @@
 }}
 
 
-select
+select	
 	t1.employee_id 
 	, t1.last_name
-	, t1.first_name
 	, t1.title
 	, t1.birth_date
 	, t1.hire_date

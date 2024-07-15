@@ -68,13 +68,15 @@
 ### 4. Transform data using DBT
  - Using dimensional model to design database structure
  - Using order table as the fact table, seperate shipping information from it and combine ith other metrics to transform into dimension tables
-   
+![ERD](images/ERD.png)
+
 ### 5. Orchestration
 - We create a bash file that contain execution command of both the intregration part and the transformation in the corret order.
 
 ### 6. Visulaization 
 - Using tableau as visualization model
 - Apply calculation metrics in it to present results
+![bi_report](images/bi_report.png)
 
 ### 7. Schedule pipeline with ECS and ECR
 - Containerize the code and its dependencies using Docker.

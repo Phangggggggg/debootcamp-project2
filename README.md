@@ -57,7 +57,32 @@
 
 
 ### 2. Set up Airbyte 
-- Set up airbyte on AWS EC2.
+- Set up airbyte on AWS EC2 and connect it by ssh
+    - Launch EV2 instance with secret key 
+    - Install Docker and Docker compose
+    - download airbyte to EC2 by cloning the airbyte repo
+    - access airbyte thourgh ssh 
+![ab-ec2](images/airbyte-ec2.png)
+![ab-ui](images/airbyte-ui.png)
+
+### 3. Airbyte ELT pipeline
+- In the integration module, we have a class called AirbyteClient to interact with airbyte through API.
+- There is also a pipeline that trigger the connections syncs between postgres and snowflake.
+- The connection credentials of airbyte resides on .env
+
+### 4. Transform data using DBT
+
+### 5. Orchestration
+- We create a bash file that contain execution command of both the intregration part and the transformation in the corret order.
+
+### 6. Visulaization 
+
+### 7. Schedule pipeline with ECS and ECR
+- Containerize the code and its dependencies using Docker.
+-  Push the Docker image to AWS ECR and establish a scheduled task in ECS to execute the Docker container, fetching the image from AWS ECR as needed.
+- .env is stored on s3
+![ecs](images/ecs.png)
+![ecr](images/ecs.png)
 
 ## Limitations and Lessons Learned
 

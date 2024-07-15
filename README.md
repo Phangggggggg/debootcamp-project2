@@ -71,11 +71,15 @@
 - The connection credentials of airbyte resides on .env
 
 ### 4. Transform data using DBT
-
+ - Using dimensional model to design database structure
+ - Using order table as the fact table, seperate shipping information from it and combine ith other metrics to transform into dimension tables
+   
 ### 5. Orchestration
 - We create a bash file that contain execution command of both the intregration part and the transformation in the corret order.
 
 ### 6. Visulaization 
+- Using tableau as visualization model
+- Apply calculation metrics in it to present results
 
 ### 7. Schedule pipeline with ECS and ECR
 - Containerize the code and its dependencies using Docker.
@@ -85,7 +89,7 @@
 ![ecr](images/ecs.png)
 
 ## Limitations and Lessons Learned
-
+- Building the data pipeline and transformation processes iteratively, with frequent testing, helps identify and resolve issues early in the development cycle.
 
 
 

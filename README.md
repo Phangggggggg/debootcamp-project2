@@ -87,6 +87,15 @@
 
 ## Limitations and Lessons Learned
 - Building the data pipeline and transformation processes iteratively, with frequent testing, helps identify and resolve issues early in the development cycle.
+- Due to an issue with the Snowflake connector in the latest Airbyte version, we need to downgrade to a previous version to resolve the problem.
+- We have learned how to tune the replication log on RDS by attaching the parameter group.
+- We encountered a slow syncing process in Airbyte, which was caused by full storage on RDS. We learned how to add more storage to RDS to resolve this issue.
+
+
+
+
+
+
 
 
 

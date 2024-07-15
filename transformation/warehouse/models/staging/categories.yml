@@ -5,3 +5,4 @@ models:
         tests:
           - unique
           - not_null
+          - categories_test

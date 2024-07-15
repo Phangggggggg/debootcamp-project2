@@ -1,2 +1,4 @@
 models:
   - name: products
+  tests:
+    - non_zero_unit_price_test

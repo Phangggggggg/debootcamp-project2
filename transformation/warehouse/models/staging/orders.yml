@@ -1,2 +1,5 @@
 models:
   - name: orders
+  tests:
+    - reasonable_freight_test
+    

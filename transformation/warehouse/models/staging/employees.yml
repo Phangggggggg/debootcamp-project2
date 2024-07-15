@@ -1,2 +1,4 @@
 models:
   - name: employees
+  test:
+    - valid_employee_title_test

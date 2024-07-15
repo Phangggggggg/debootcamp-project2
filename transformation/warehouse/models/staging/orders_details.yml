@@ -1,2 +1,4 @@
 models:
   - name: orders_details
+  tests:
+      - positive_quantity_test

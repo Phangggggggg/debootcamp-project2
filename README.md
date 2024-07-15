@@ -4,17 +4,12 @@
 - The objective of our project is to provide analytical evidence to support Northwind Company’s business decisions and gain business insights.
 
 ## Questions 
-- Orders and Shipping
-    - What are the average days to ship for each shipping company?
-    - Group countries based on the shipping time 
-    - What is the average shipping time for each region compared   to the revenue?
-- Sales performance 
-    - What is the revenue by product category?
-    - Which regions have the highest and lowest sales volumes by product category?
-    - Top5 products that have the highest growth and decline in sales.
-- Supplier Performance
-    - Rank the suppliers based on order qualities?
-    - Rank the suppliers that provide the cheapest price for each product category
+- Orders and Sales
+    - What is the revenue trend?
+    - What are the sales performance of major countries?
+- Customer Performance
+    - How to segment customers?
+    - What are the differences between their behaviours?
 
 ## Source datasets
 

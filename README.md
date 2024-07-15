@@ -76,7 +76,7 @@
 ### 6. Visulaization 
 - Using tableau as visualization model
 - Apply calculation metrics in it to present results
-![bi_report](images/bi_report.png)
+![bi_report](images/bi_report.PNG)
 
 ### 7. Schedule pipeline with ECS and ECR
 - Containerize the code and its dependencies using Docker.
